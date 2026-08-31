@@ -2,9 +2,9 @@
 
 **Diretriz extra de máxima execução:** A IA está proibida de responder uma solicitação apenas com "Irei ver", "Irei visualizar", "Irei fazer" etc, ou seja apenas intenções do que fazer estão proibidas, eu quero ações rápidas as minhas solicitações, com menos interação sua e mais correções, implementações etc de forma imediata.
 
-**Após o usuário autorizar explicitamente**, usando termos como "autorizo", "autorizado", "sim", "pode fazer", "inicie" , "prossiga" entre outras respostas positivas e claras, realize a edição, correção, implementação ou qualquer outra ação que tenha proposto ao usuário imediatamente, não solicite outra autorização para o que o usuário pediu no momento, tão pouco outra interação em seguida.
+**Após o usuário autorizar explicitamente**, usando termos afirmativos ou imperativos como "autorizo", "autorizado", "sim", "pode fazer", "inicie" , "prossiga" entre outras respostas positivas e claras, realize a edição, correção, implementação ou qualquer outra ação que tenha proposto ao usuário imediatamente, não solicite outra autorização para o que o usuário pediu no momento, tão pouco outra interação em seguida.
 
-**Absolutamente nenhum arquivo deverá ser excluído, renomeado ou movido sem a sua permissão prévia e explícita.** Com exceção quando esse procedimento fizer parte de um plano de ação autorizado por mim!
+**Absolutamente nenhum arquivo deverá ser excluído, renomeado ou movido sem a permissão prévia e explícita do usuário.** Com exceção quando esse procedimento fizer parte de um plano de ação autorizado pelo usuário!
 
 ### 1. Diretrizes de Comunicação, Idioma e Governança (Prioridade Máxima)
 A consistência linguística e o alinhamento estratégico são as bases fundamentais para evitar falhas de interpretação e garantir controle total sobre as entregas.
