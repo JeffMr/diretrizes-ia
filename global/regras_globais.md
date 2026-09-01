@@ -1,15 +1,29 @@
+<!-- Nome do arquivo: regras_globais.md -->
+
 ## Autorização e Execução
 
-**Diretriz extra de máxima execução:** A IA está proibida de responder uma solicitação apenas com "Irei ver", "Irei visualizar", "Irei fazer" etc, ou seja apenas intenções do que fazer estão proibidas, eu quero ações rápidas as minhas solicitações, com menos interação sua e mais correções, implementações etc de forma imediata.
+* **Diretriz de Máxima Execução:** É proibido responder com intenções vazias (ex: "Irei fazer", "Vou analisar"). Responda sempre com entregas práticas, correções ou códigos implementados.
+* **Gatilhos de Autorização:** Termos afirmativos como "autorizo", "autorizado", "sim", "pode fazer", "inicie" ou "prossiga" dão carta branca para a execução imediata da ação proposta, sem novas solicitações de confirmação.
+* **Integridade de Arquivos:** Absolutamente nenhum arquivo poderá ser excluído, renomeado ou movido sem permissão prévia, exceto se houver um plano de ação global previamente autorizado.
 
-**Após o usuário autorizar explicitamente**, usando termos afirmativos ou imperativos como "autorizo", "autorizado", "sim", "pode fazer", "inicie" , "prossiga" entre outras respostas positivas e claras, realize a edição, correção, implementação ou qualquer outra ação que tenha proposto ao usuário imediatamente, não solicite outra autorização para o que o usuário pediu no momento, tão pouco outra interação em seguida.
+---
 
-**Absolutamente nenhum arquivo deverá ser excluído, renomeado ou movido sem a permissão prévia e explícita do usuário.** Com exceção quando esse procedimento fizer parte de um plano de ação autorizado pelo usuário!
+### 1. Diretrizes de Comunicação, Idioma e Governança
+* **Idioma Oficial:** Todas as interações, documentações, códigos e mensagens de retorno devem ser estritamente em português do Brasil (pt-BR), aplicando-se a qualquer tipo de saída gerada (diagnósticos, relatórios ou exceções).
+* **Protocolo de Permissão Prévia:** 
+  1. Antes de iniciar qualquer desenvolvimento ou alteração estrutural, a IA deve apresentar um plano de ação (melhorias, metodologia e impactos) e **aguardar a confirmação explícita**.
+  2. Assim que o usuário fornecer uma resposta afirmativa válida, a IA deve realizar a implementação completa imediatamente, sem etapas intermediárias de checagem.
 
-### 1. Diretrizes de Comunicação, Idioma e Governança (Prioridade Máxima)
-A consistência linguística e o alinhamento estratégico são as bases fundamentais para evitar falhas de interpretação e garantir controle total sobre as entregas.
+---
 
-* **Idioma Oficial:** Todas as interações, documentações, comentários de código e mensagens de retorno devem ser realizadas estritamente em português do Brasil (pt-BR), independentemente do idioma de entrada da solicitação.
-* **Escopo Abrangente:** A regra de exclusividade aplica-se a todas as saídas geradas, incluindo diagnósticos de erros, relatórios de depuração, blocos explicativos e tratamento de exceções.
-* **Protocolo de Permissão Prévia:** Antes de responder a qualquer solicitação de desenvolvimento, a IA deve apresentar um plano de ação detalhado contendo sugestões de melhoria, metodologia de aplicação planejada e o impacto esperado (pontos positivos e potenciais riscos). A IA deve estritamente aguardar a confirmação explícita do usuário antes de iniciar a escrita ou edição de códigos.
-* **Autorização:** Após o usuário autorizar explicitamente, usando termos como "autorizo", "autorizado", "sim", "pode fazer", "inicie" , "prossiga" entre outras respostas positivas e claras, realize a edição, correção, implementação ou qualquer outra ação que tenha proposto ao usuário imediatamente, não solicite outra autorização para o que o usuário pediu no momento.
+### 2. Governança de Código, Qualidade e Segurança
+* **Padrão de Código Limpo:** Toda alteração ou criação de código deve seguir rigorosamente as melhores práticas de legibilidade, tipagem estrita (quando aplicável) e comentários explicativos apenas em trechos complexos, mantendo o padrão em pt-BR.
+* **Tratamento Robusto de Erros:** É terminantemente proibido o uso de blocos de tratamento de erro vazios ou genéricos (`try...catch` sem log ou tratamento real). Toda exceção deve prever um mecanismo claro de diagnóstico.
+* **Validação de Impacto em Dependências:** Antes de propor alterações em bibliotecas, arquivos de configuração ou rotas, a IA deve verificar e alertar sobre potenciais quebras de compatibilidade (*breaking changes*).
+
+---
+
+### 3. Gestão de Escopo, Alucinações e Formato de Entrega
+* **Proibição de Suposições Tecnológicas:** Se houver ambiguidades ou falta de parâmetros técnicos (versões, caminhos de diretório, estruturas), a IA não deve inventar dados; deve listar premissas ou fazer uma pergunta direta e cirúrgica antes de gerar código.
+* **Escopo Estrito da Demanda:** Focar exclusivamente no que foi solicitado, evitando refatorações paralelas não solicitadas ("efeito borboleta") em trechos de código que já funcionam e não têm relação direta com a tarefa.
+* **Blocos de Código Completos:** Sempre que possível, forneça blocos de código atualizados de forma clara e contextualizada, evitando recortes excessivamente fragmentados que dificultem a aplicação manual pelo usuário.
