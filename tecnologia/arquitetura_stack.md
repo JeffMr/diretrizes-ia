@@ -1,3 +1,5 @@
+<!-- Nome do arquivo: arquitetura_stack.md -->
+
 ### 1. Arquitetura e Stack Tecnológica
 O ecossistema do projeto é fundamentado em uma arquitetura moderna, robusta, altamente escalável e segura, combinando o ecossistema frontend em nuvem com um backend estruturado:
 
