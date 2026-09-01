@@ -15,9 +15,7 @@ Essencial para o controle de qualidade imediato e sincronização dinâmica da e
 
 * **Ciclo de Homologação e Testes:** Toda alteração de código deve vir acompanhada de um passo a passo estruturado para testes manuais ou validação automatizada.
 * **Ferramentas de Verificação:** Aplicação contínua de linters e processos de build (como `tsc --noEmit` e `compile_applet`) após cada etapa crítica para assegurar prontidão para produção.
-* **Sincronização Reativa (UI):** O carregamento, escuta e exibição de dados nos componentes de interface devem ocorrer prioritariamente em tempo real, refletindo instantaneamente criações, edições e exclusões de forma dinâmica e sincronizada."""
-
-updated_seguranca = current_seguranca + """
+* **Sincronização Reativa (UI):** O carregamento, escuta e exibição de dados nos componentes de interface devem ocorrer prioritariamente em tempo real, refletindo instantaneamente criações, edições e exclusões de forma dinâmica e sincronizada.
 
 ### 3. Segurança de Dados e Persistência de Preferências
 * **Persistência Segura no Banco de Dados:** Informações críticas e preferências sensíveis do usuário, como o estado de tema (*dark/light mode*), devem ser salvas e recuperadas diretamente do banco de dados (Firestore), sendo terminantemente proibido o armazenamento exclusivo em instâncias locais do navegador para dados de controle de sessão/interface.
